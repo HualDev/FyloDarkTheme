@@ -1,0 +1,98 @@
+:root{
+    --darkBlueIntroSignUpBackground: hsl(217, 28%, 15%);
+    --darkBlueMainBackground: hsl(218, 28%, 13%);
+    --darkBlueFooterBackground: hsl(216, 53%, 9%);
+    --darkBlueTestimonialsBackground: hsl(219, 30%, 18%);
+    --cyanInsideCall-to-actionGradient: hsl(176, 68%, 64%);
+    --blueInsideCall-to-actionGradient: hsl(198, 60%, 50%);
+    --lightRedError: hsl(0, 100%, 63%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;    
+}
+
+header{
+    background-color: var(--darkBlueIntroSignUpBackground);
+    background-image: url('./images/bg-curvy-mobile.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+nav img{
+    width: 30%;
+    height: 30%;
+}
+
+ul{
+    list-style: none;
+    color: var(--white);
+    display: flex;
+    gap: 1rem;
+    width: 70%;
+    font-size: 0.8rem;
+}
+
+.header-main{
+    padding: 2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.header-main img{
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 2rem auto;
+    
+}
+
+h1{       
+    font-size: 1.5rem;
+}
+
+p{
+    opacity: 0.5;
+}
+
+.header-main button{
+    border: none;
+    color: var(--white);
+    background-image: linear-gradient(to right, var(--cyanInsideCall-to-actionGradient),var(--blueInsideCall-to-actionGradient));
+    width: 80%;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    font-weight: 700;
+    margin: 1rem auto;
+}
+
+.principal{
+    background-color: var(--darkBlueMainBackground);
+}
+
+
+
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
