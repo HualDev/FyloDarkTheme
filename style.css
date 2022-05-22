@@ -43,8 +43,9 @@ ul{
     list-style: none;
     color: var(--white);
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
-    width: 70%;
+    width: 65%;
     font-size: 0.8rem;
 }
 
@@ -83,6 +84,150 @@ p{
 
 .principal{
     background-color: var(--darkBlueMainBackground);
+    padding: 2rem;
+}
+
+.advantages{
+    color: var(--white);
+    text-align: center;
+    margin: 2rem auto 5rem;
+}
+
+.advantages img{
+    display: block;
+    margin: auto;
+}
+
+.productive{
+    color: var(--white);
+    text-align: center;
+}
+
+.productive img{
+    width: 90%;
+    height: 90%;    
+}
+
+.productive h2, .productive p, .productive a{
+    text-align: justify;
+}
+
+.productive h2{
+    font-size: 1.1rem;
+}
+
+.work{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;    
+}
+
+.productive .arrow{
+    width: 10%;
+    height: 10%;
+}
+
+a{
+    color: var(--cyanInsideCall-to-actionGradient);
+    text-decoration: none;
+}
+
+hr{
+    width: 60%;
+    margin: 0.2rem 0 0 ;
+    background-color: var(--cyanInsideCall-to-actionGradient);
+    border-color: var(--cyanInsideCall-to-actionGradient);
+}
+
+.comments{
+    background-image: url('./images/bg-quotes.png');
+    background-repeat: no-repeat;
+    padding: 3rem 0;
+    margin: 3rem auto;
+}
+
+.user{
+    background-color: var(--darkBlueTestimonialsBackground);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 0.3rem;
+    margin-top: -0.3rem;
+}
+
+.user p{
+    color: var(--white);
+    margin: 0;
+    font-size: 0.7rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.user_name{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0rem;
+    color: var(--white);
+    font-size: 0.6rem;
+}
+
+.user_name img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+
+.user_name h3{
+    margin: 0 0 0.2rem;
+    opacity: 0.8;
+}
+
+.user_name span{
+    opacity: 0.5;
+    font-size: 0.5rem;
+}
+
+.early_access{
+    color: var(--white);
+    background-color: var(--darkBlueTestimonialsBackground);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.early_access h3{
+    opacity: 0.8;
+}
+
+.early_access p{
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+input{
+    border: none;
+    color: var(--white);
+    width: 80%;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    font-weight: 700;
+    display: block;
+    margin: 1rem auto;
+}
+
+input::placeholder{
+    text-align: justify;
+    opacity: 0.5;
+    font-size: 0.6rem;
+    padding: 0rem;
+}
+
+
+input[type='button']{     
+    background-image: linear-gradient(to right, var(--cyanInsideCall-to-actionGradient),var(--blueInsideCall-to-actionGradient));
+    font-size: 1rem;
 }
 
 
