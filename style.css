@@ -84,7 +84,7 @@ p{
 
 .principal{
     background-color: var(--darkBlueMainBackground);
-    padding: 2rem;
+    padding: 2rem 2rem 10rem;
 }
 
 .advantages{
@@ -194,6 +194,11 @@ hr{
     padding: 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
 }
 
 .early_access h3{
@@ -224,19 +229,74 @@ input::placeholder{
     padding: 0rem;
 }
 
-
-input[type='button']{     
+input[type='submit']{     
     background-image: linear-gradient(to right, var(--cyanInsideCall-to-actionGradient),var(--blueInsideCall-to-actionGradient));
     font-size: 1rem;
 }
 
+input[type='email']{
+    color: var(--darkBlueMainBackground);
+}
 
+footer{
+    background-color: var(--darkBlueFooterBackground);
+    padding: 15rem 2rem 1rem ;
+}
 
+.logo_footer{
+    padding: 2rem 0.8rem;
+}
 
+.info{
+    display: flex;
+    gap: 1rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.info img{
+    width: 5%;
+    height: 5%;
+    opacity: 0.8;
+}
+
+.info p{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    line-height: 2.5;
+    padding: 0;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--white);
+}
+
+.social div{
+    padding: 0.2rem;
+    border: solid 1px;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .attribution {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
+    color: var(--white);
+    padding-top: 1rem;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);

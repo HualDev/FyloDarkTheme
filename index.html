@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/8b6237c08b.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
  
 </head>
@@ -142,32 +143,50 @@
           It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
           questions, our support team would be happy to help you.
         </p>
-        <form action="">
-          <input type="email" placeholder="email@example.com">
-          <input type="button" value="Get Started For Free">
+        <form action="" method="post">
+          <input type="email" placeholder="email@example.com" required>
+          <input type="submit" value="Get Started For Free">
         </form>
       </section>
     </div>
-  </main>
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
+  </main>  
 
   <footer>
     <div class="footer_main">
-      <img src="./images/logo.svg" alt="Logo Image">
+      <img class="logo_footer" src="./images/logo.svg" alt="Logo Image">
+      <div class="footer_info">
+        <div class="info">
+          <img src="./images/icon-location.svg" alt="Location Image">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua
+          </p>
+        </div>
+        <div class="info">
+          <img src="./images/icon-phone.svg" alt="Phone Image">
+          <p>+1-543-123-4567</p>
+        </div>
+        <div class="info">
+          <img src="./images/icon-email.svg" alt="Email Image">
+          <p>example@fylo.com</p>
+        </div>
+        <ul>  
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+        <ul>  
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </ul>
+        <div class="social">
+          <div><i class="fa fa-facebook-f"></i></div>
+          <div><i class="fa fa-twitter"></i></div>
+          <div><i class="fa fa-instagram"></i></div>
+        </div>
+      </div>
     </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
