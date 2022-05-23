@@ -154,25 +154,14 @@ button:hover{
     text-align: left;
 }
 
-/* .work:hover{
-    cursor: pointer;
-    color: var(--darkBlueMainBackground);
-} */
-
 .productive .arrow{
     width: 10%;
     height: 10%;
 }
 
-span{
+.work span{
     color: var(--cyanInsideCall-to-actionGradient);
-    text-decoration: none;
 }
-
-/* a:hover{
-    color: var(--white);
-    opacity: 0.7;
-} */
 
 hr{
     width: 55%;
@@ -261,7 +250,7 @@ input{
     border-radius: 5rem;
     font-weight: 700;
     display: block;
-    margin: 1rem auto;
+    margin: 1rem auto 0.2rem;
 }
 
 input::placeholder{
@@ -271,13 +260,13 @@ input::placeholder{
     padding: 0rem;
 }
 
-input[type='submit']{  
+input[type='button']{  
     font-family: 'Raleway', sans-serif;    
     background-image: linear-gradient(to right, var(--cyanInsideCall-to-actionGradient),var(--blueInsideCall-to-actionGradient));
     font-size: 1rem;
 }
 
-input[type='submit']:hover{
+input[type='button']:hover{
     background-color: var(--cyanInsideCall-to-actionGradient);
     background-image: none;
     cursor: pointer;
@@ -285,6 +274,22 @@ input[type='submit']:hover{
 
 input[type='email']{
     color: var(--darkBlueMainBackground);
+}
+
+form span{
+    display: block;
+    text-align: center;
+    padding-left: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--lightRedError);
+}
+
+.close_error{
+    display: none;
+}
+
+.show{
+    display: block;
 }
 
 footer{
@@ -362,6 +367,20 @@ footer{
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:400px) {
+    .work{
+        width: 50%;
+    }
+
+    .white{
+        width: 50%;
+    }
+
+    hr{
+        width: 50%;
+    }
 }
 
 @media (min-width:650px) {
@@ -477,7 +496,7 @@ footer{
         padding: 0.5rem 1rem;
     }
 
-    input[type='submit']{
+    input[type='button']{
         width: 30%;
         font-size: 0.5rem
     }
@@ -490,6 +509,11 @@ footer{
 
     input::placeholder{
         font-size: 0.4rem;
+    }
+
+    form span{
+        text-align: justify;
+        font-size: 0.5rem;
     }
 
     footer{
@@ -549,5 +573,18 @@ footer{
     .attribution a{
         font-weight: 600;
     }
+}
 
+@media (min-width:1000px) {
+    .work{
+        width: 30%;
+    }
+
+    .white{
+        width: 30%;
+    }
+
+    hr{
+        width: 30%;
+    }
 }

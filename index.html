@@ -88,8 +88,7 @@
           </p>
           <div id="work">
             <div id="works" class="work">
-              <span id="a_work" href="">See how Fylo works</span>
-              <!-- <img class="arrow" src="./images/icon-arrow.svg" alt="Arrow Image">             -->
+              <span id="a_work" href="">See how Fylo works</span>              
             </div>
             <hr id="hr_line">
           </div>           
@@ -150,8 +149,9 @@
           questions, our support team would be happy to help you.
         </p>
         <form action="" method="post">
-          <input type="email" placeholder="email@example.com" required>
-          <input type="submit" value="Get Started For Free">
+          <input id="email" type="email" placeholder="email@example.com">          
+          <input id="button_submit" type="button" value="Get Started For Free" onClick="pruebaemail(email.value)">
+          <span id="error" class="close_error">Please, enter a valid email address</span>
         </form>
       </section>
     </div>
