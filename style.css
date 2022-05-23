@@ -39,7 +39,7 @@ nav img{
     height: 30%;
 }
 
-ul{
+nav ul{
     list-style: none;
     color: var(--white);
     display: flex;
@@ -167,7 +167,7 @@ hr{
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 0rem;
+    margin-top: 0.7rem;
     color: var(--white);
     font-size: 0.6rem;
 }
@@ -264,14 +264,16 @@ footer{
     margin: 0;
 }
 
-ul{
+.footer_info ul{
     display: flex;
     flex-direction: column;
     margin: 3rem 0;
     line-height: 2.5;
     padding: 0;
     font-size: 1rem;
+    color: var(--white);
     opacity: 0.7;
+    list-style: none;
 }
 
 .social{
@@ -300,4 +302,184 @@ ul{
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:650px) {
+    header{
+        background-image: url('./images/bg-curvy-desktop.svg');
+    }
+
+    nav img{
+        width: 10%;
+        height: 10%;
+    }
+
+    nav ul{
+        width: 30%;
+        font-size: 0.5rem;
+    }
+
+    .header-main{
+        width: 50%;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+
+    .header-main img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .header-main button{
+        width: 45%;
+        padding: 0.5rem 1rem;
+    }
+
+    .principal{
+        padding: 2rem 2rem 7rem;
+    }
+
+    .advantage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        margin: 2rem auto;        
+    }
+
+    .advantages{
+        width: 50%;
+        font-size: 0.7rem;
+        margin: 0;
+        justify-self: center;
+    }
+
+    .advantages img{
+        width: 20%;
+        height: 20%;
+    }
+
+    .productive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .productive img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .productive div{
+        width: 40%;
+        font-size: 0.6rem;
+    }
+
+    hr{
+        width: 35%;
+    }
+
+    .comments{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0;        
+    }
+
+    .user{
+        width: 30%;
+    }
+
+    .user p{
+        font-size: 0.5rem;
+    }
+
+    .early_access{
+        width: 50%;
+        font-size: 0.6rem;
+    }
+
+    .early_access p{
+        margin-bottom: 1rem;
+        font-size: 0.6rem;
+    }
+
+    input{
+        display: inline;
+        padding: 0.5rem 1rem;
+    }
+
+    input[type='submit']{
+        width: 30%;
+        font-size: 0.5rem
+    }
+
+    input[type='email']{
+        width: 60%;
+        font-size: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    input::placeholder{
+        font-size: 0.4rem;
+    }
+
+    footer{
+        padding: 5rem 2rem 1rem;
+    }
+
+    .logo_footer{
+        width: 15%;
+        height: 15%;
+    }
+
+    .footer_info{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .info{
+        width: 25%;
+        padding-top: 0.3rem;       
+    }
+
+    .info .map{
+        width: 10%;
+        height: 10%;
+    }
+
+    .info img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .info p{
+        font-size: 0.5rem;
+        width: 100%;
+    }
+
+    .footer_info ul{
+        font-size: 0.5rem;
+        margin: 0;        
+    }
+
+    .social{
+        padding-top: 0.3rem;
+    }
+
+    .social div{
+        font-size: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .attribution{
+        font-size: 0.7rem;
+    }
+
+    .attribution a{
+        font-weight: 600;
+    }
+
 }
